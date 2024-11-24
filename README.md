@@ -62,9 +62,11 @@ Carte sur un réseau différent :
 ### Activation permanente de l'IP forwarding sous Linux
 L'IP forwarding permet à un système d'exploitation (ici Linux) de faire suivre des paquets comme le fait un routeur ou plus généralement de les router au travers d'autres réseaux.
 Le fichier a éditer est :  `/etc/sysctl.conf`.  
-Il faut décommenter ces 2 lignes, respectivmeent pour l'IPv4 et l'IPv6 :  
->**net.ipv4.ip_forward=1**
->**net.ipv6.conf.all.forwarding=1**
+Il faut décommenter ces 2 lignes, respectivement pour l'IPv4 et l'IPv6 :  
+>**net.ipv4.ip_forward=1**  
+>**net.ipv6.conf.all.forwarding=1**  
+Enregistrer et redémarer le service réseau :
+`systemctl restart networking.service`
 
 
 
