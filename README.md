@@ -37,6 +37,29 @@ Voici la solution pour : Machine 1 :arrow_right: Machine 2.
 >**`ping 10.0.0.11`**  
 >**`ping fd8f:2d0f:0240::11`**
 Il faut tester également de le Machine 2 :arrow_right: Machine 1 ...
-Lorsque tout fontionne nous pouvons passer à l'étape 2.
+Lorsque tout fontionne nous pouvons passer à l'étape 2.  
+
 
 ## Exercice - Etape 2
+
+Il faut créer notre routeur :
+Créer une VM Debian. Lui attribuer 2 cartes réseau et les mettre en _réseau interne_, sur un _réseau différent_.
+Nous allons éditer la config des 2 cartes réseaux comme demandé dans la quête. C'est à dire une carte sur le même réseau que les premières machines et une carte sur un réseau différent :
+
+Carte sur le réseau des premières
+>**iface enp0s3 inet static**  
+>    **address 10.0.0.1/24**  
+>**iface enp0s3 inet6 static**  
+>    **address fd8f:2d0f:0240::1/64**  
+
+
+Carte sur un réseau différent :
+>**iface enp0s8 inet static**  
+>    **address 192.168.0.250/24**  
+>**iface enp0s8 inet6 static**  
+>    **address fd8f:2d0f:0240:192::250/64**  
+
+
+
+
+
