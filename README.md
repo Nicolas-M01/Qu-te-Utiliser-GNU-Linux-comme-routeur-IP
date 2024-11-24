@@ -35,7 +35,7 @@ Il faut bien sûr pinger entre chaque machine et avec les 2 formes d'IP.
 
 Voici la solution pour : Machine 1 :arrow_right: Machine 2.
 >**`ping 10.0.0.11`**  
->**`ping fd8f:2d0f:0240::11`**
+>**`ping fd8f:2d0f:0240::11`**  
 Il faut tester également de le Machine 2 :arrow_right: Machine 1 ...
 Lorsque tout fontionne nous pouvons passer à l'étape 2.  
 
@@ -58,6 +58,20 @@ Carte sur un réseau différent :
 >    **address 192.168.0.250/24**  
 >**iface enp0s8 inet6 static**  
 >    **address fd8f:2d0f:0240:192::250/64**  
+
+### Activation permanente de l'IP forwarding sous Linux
+L'IP forwarding permet à un système d'exploitation (ici Linux) de faire suivre des paquets comme le fait un routeur ou plus généralement de les router au travers d'autres réseaux.
+Le fichier a éditer est :  `/etc/sysctl.conf`.  
+Il faut décommenter ces 2 lignes, respectivmeent pour l'IPv4 et l'IPv6 :  
+>**net.ipv4.ip_forward=1**
+>**net.ipv6.conf.all.forwarding=1**
+
+
+
+
+
+
+
 
 
 
