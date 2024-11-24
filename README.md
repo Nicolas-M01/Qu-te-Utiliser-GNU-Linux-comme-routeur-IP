@@ -64,11 +64,16 @@ L'IP forwarding permet à un système d'exploitation (ici Linux) de faire suivre
 Le fichier a éditer est :  `/etc/sysctl.conf`.  
 Il faut décommenter ces 2 lignes, respectivement pour l'IPv4 et l'IPv6 :  
 >**net.ipv4.ip_forward=1**  
->**net.ipv6.conf.all.forwarding=1**  
+>**net.ipv6.conf.all.forwarding=1**
+
 Enregistrer et redémarer le service réseau :
 `systemctl restart networking.service`
 
-
+Il faut pinger en _IPv4_ et en _IPv6_ :
+Machine 1 ➡️ routeur
+Machine 2 ➡️ routeur
+Routeur ➡️ Machine 1
+Routeur ➡️ Machine 2
 
 
 
