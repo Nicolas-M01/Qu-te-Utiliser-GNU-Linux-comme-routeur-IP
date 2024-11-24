@@ -69,17 +69,32 @@ Il faut décommenter ces 2 lignes, respectivement pour l'IPv4 et l'IPv6 :
 Enregistrer et redémarer le service réseau :
 `systemctl restart networking.service`
 
-Il faut pinger en _IPv4_ et en _IPv6_ :
-Machine 1 ➡️ routeur
-Machine 2 ➡️ routeur
-Routeur ➡️ Machine 1
-Routeur ➡️ Machine 2
+* Il faut pinger en _IPv4_ et en _IPv6_ :  
+Machine 1 ➡️ routeur  
+Machine 2 ➡️ routeur  
+Routeur ➡️ Machine 1  
+Routeur ➡️ Machine 2  
 
 
+### Paramétrage de la passerelle sur les 2 machines
+
+On va indiquer la passerelle (passerelle par défaut puisqu'il n'y a qu'un seul routeur) sur les 2 machines. Notre fichier `/etc/network/interfaces` va être modifié :  
+
+* Machine 1 :  
+>**iface enp0s3 inet static**   
+>    **address 10.0.0.10/24**
+>    **gateway 10.0.0.1**
+
+>**iface enp0s3 inet6 static**  
+>    **address fd8f:2d0f:0240::10/64**  
 
 
+* Machine 2 :  
+>**iface enp0s3 inet static**  
+>   **address 10.0.0.11/24**  
 
-
+>**iface enp0s3 inet6 static**  
+>    **address fd8f:2d0f:0240::11/64**  
 
 
 
