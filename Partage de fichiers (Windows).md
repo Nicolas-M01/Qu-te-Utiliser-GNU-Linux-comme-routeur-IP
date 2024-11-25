@@ -14,3 +14,21 @@ Installer le rôle de "Serveur de fichiers" dans Add roles and features. Et suiv
 
 ## 3.Configure un partage nommé "Docs" pour ce dossier
 ![Capture d'écran 2024-11-25 182525](https://github.com/user-attachments/assets/b67c7e7a-77df-41b2-b6af-914154cdf7d5)
+
+Attribuer les droits pour ce dossier :  
+![Capture d'écran 2024-11-25 183925](https://github.com/user-attachments/assets/fabf0b5b-92ef-4812-8750-3999babf413d)
+
+
+## 4. Crée trois sous-dossiers : "RH", "Comptabilité" et "Direction"
+Directement dans le gestionnaire des dossier/fichiers :  
+![image](https://github.com/user-attachments/assets/6335b11a-771e-454f-9f53-34dff509d688)
+
+
+## 5.Configure les permissions NTFS et de partage pour que :
+* Le groupe "RH" ait un accès en lecture/écriture au dossier "RH"
+* Le groupe "Comptabilité" ait un accès en lecture/écriture au dossier "Comptabilité"
+* Le groupe "Direction" ait un accès en lecture/écriture à tous les dossiers
+* Tous les utilisateurs du domaine aient un accès en lecture seule au dossier "Documents_Entreprise"
+
+Dans Server manager/ File and Storage Service (panel de gauche) / Shares / Clic droit sur le dossier partagé : `C:\Documents_Entreprise` / open share.  
+On accède à nos 3 dossiers.
