@@ -11,4 +11,6 @@ Installer le rôle de "Serveur de fichiers" dans Add roles and features. Et suiv
 
 ## 2. Crée un dossier "Documents_Entreprise" à la racine du disque C:  
 ![Capture d'écran 2024-11-25 182231](https://github.com/user-attachments/assets/b5184826-5302-4a48-8998-d537fc889ded)
+
+## 3.Configure un partage nommé "Docs" pour ce dossier
 ![Capture d'écran 2024-11-25 182525](https://github.com/user-attachments/assets/b67c7e7a-77df-41b2-b6af-914154cdf7d5)
