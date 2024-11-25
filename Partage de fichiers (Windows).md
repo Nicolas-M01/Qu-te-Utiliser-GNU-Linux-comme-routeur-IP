@@ -30,5 +30,8 @@ Directement dans le gestionnaire des dossier/fichiers :
 * Le groupe "Direction" ait un accès en lecture/écriture à tous les dossiers
 * Tous les utilisateurs du domaine aient un accès en lecture seule au dossier "Documents_Entreprise"
 
+:flushed: J'ai oublié de le faire au début mais ce n'est pas grave ! :arrow_right: Installer ADDS ( Add roles and features / Active Directory domain Service... )  
+Add a new forest / wilders.lan  ... mot de passe... NetBIOS : WILDERS ... Install.
+
 Dans Server manager/ File and Storage Service (panel de gauche) / Shares / Clic droit sur le dossier partagé : `C:\Documents_Entreprise` / open share.  
-On accède à nos 3 dossiers.
+On accède à nos 3 dossiers.  
