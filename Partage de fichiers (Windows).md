@@ -38,11 +38,14 @@ Tools :arrow_right: Active Directory Users and Computers
 Créer une OU "Personnel", puis Créer nos 3 groupes et les ajouter à cette OU :  
 ![Capture d'écran 2024-11-25 192006](https://github.com/user-attachments/assets/84f8cd0c-c13c-43cc-9662-ad8cbbecff11)  
 
-
-Dans Server manager/ File and Storage Service (panel de gauche) / Shares / Clic droit sur le dossier partagé : `C:\Documents_Entreprise` / open share.  
-On accède à nos 3 dossiers.  
-Procéder comme sur la photo, clic droit sur chaque dossier / propriétés / Security, cliquer sur "Edit" et "add" et rentrer le nom du groupe, il va retrouver chaque groupe si on est bien dans le bon domaine :  
-![Capture d'écran 2024-11-25 192514](https://github.com/user-attachments/assets/e09c57e1-b8eb-4ca0-b4c1-aefb522ed533)
+Server Manager / Disk / Volume clic droit sur notre dossier doc / New share
+  
+![Capture d'écran 2024-11-25 195019](https://github.com/user-attachments/assets/1e93e41a-1304-439a-b45b-b5165c4a17f2)
+![Capture d'écran 2024-11-25 195316](https://github.com/user-attachments/assets/ad35786e-f3c2-488f-b91c-3c9049ccae75)
+![Capture d'écran 2024-11-25 195345](https://github.com/user-attachments/assets/740767fc-346d-4018-9a31-ca9391d0c8b9)
+Editer pour chaque groupe créé comme demandé pour chaque dossier.
 
 
 ## 6. Utilise PowerShell pour lister tous les partages sur le serveur
+`Commande Get-SmbShare` pour visualiser les documents SMB
+![Capture d'écran 2024-11-25 195640](https://github.com/user-attachments/assets/f225bc17-cc57-42d8-95c8-b4cbff337ac6)
