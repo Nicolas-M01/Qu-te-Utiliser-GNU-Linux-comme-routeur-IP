@@ -59,4 +59,6 @@ La commande pour configurer le lecteur appliquée à mon cas est :
 
 ![Capture d'écran 2024-11-25 212918](https://github.com/user-attachments/assets/54d86293-9f8a-488a-ad29-c371139cd169)
 
-
+## 8. Teste l'accès depuis le poste client avec différents comptes utilisateurs
+:smiley_cat: Les dossiers sont bien accessibles. :smiley_cat:
+![Capture d'écran 2024-11-25 213604](https://github.com/user-attachments/assets/f4d090d1-2476-4bd9-9197-766167860492)
