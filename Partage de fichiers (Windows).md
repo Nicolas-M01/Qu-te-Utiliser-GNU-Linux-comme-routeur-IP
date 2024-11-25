@@ -49,3 +49,14 @@ Editer pour chaque groupe créé comme demandé pour chaque dossier.
 ## 6. Utilise PowerShell pour lister tous les partages sur le serveur
 `Commande Get-SmbShare` pour visualiser les documents SMB
 ![Capture d'écran 2024-11-25 195640](https://github.com/user-attachments/assets/f225bc17-cc57-42d8-95c8-b4cbff337ac6)
+
+
+## 7. Sur un poste client Windows 10, configure un lecteur réseau pointant vers ce partage via PowerShell
+Démarrer une VMwin10, la mettre sur le même réseau que le Serveur de fichiers, bien renseigne l'adresse DNS (serveur de fichier qui a aussi le controleur de domaine. Pinger. Ensuite, paramétrer le domaine sur le client et se connecter en admin. restart le win10 client, en se connectant au domaine.
+
+La commande pour configurer le lecteur appliquée à mon cas est :
+`New-PSDrive -Name "Z" -PSProvider FileSystem -Root "\\\\WIN-0QJUA78HGHJ.wilders.lan\Docs" -Persist`
+
+![Capture d'écran 2024-11-25 212918](https://github.com/user-attachments/assets/54d86293-9f8a-488a-ad29-c371139cd169)
+
+
