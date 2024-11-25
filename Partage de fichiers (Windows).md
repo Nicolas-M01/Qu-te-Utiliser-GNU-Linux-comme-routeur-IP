@@ -43,3 +43,6 @@ Dans Server manager/ File and Storage Service (panel de gauche) / Shares / Clic 
 On accède à nos 3 dossiers.  
 Procéder comme sur la photo, clic droit sur chaque dossier / propriétés / Security, cliquer sur "Edit" et "add" et rentrer le nom du groupe, il va retrouver chaque groupe si on est bien dans le bon domaine :  
 ![Capture d'écran 2024-11-25 192514](https://github.com/user-attachments/assets/e09c57e1-b8eb-4ca0-b4c1-aefb522ed533)
+
+
+## 6. Utilise PowerShell pour lister tous les partages sur le serveur
